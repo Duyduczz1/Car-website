@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cửa hàng BMW cao cấp – Trải nghiệm đẳng cấp Đức Quốc" />
+  <title>BMW – The Ultimate Driving Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">B<span>M</span>W</a>
+    <ul>
+      <li><a href="#hero">Trang chủ</a></li>
+      <li><a href="#models">Dòng xe</a></li>
+      <li><a href="#reviews">Đánh giá</a></li>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="speed-lines" id="speedLines"></div>
+
+    <div class="headlight-beam"></div>
+    <svg class="hero-car" viewBox="0 0 420 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 110 Q35 80 80 70 L140 50 Q180 30 230 28 Q280 28 310 40 L370 70 Q400 80 405 100 L410 110 Z"
+            fill="#1a1a2e" stroke="#1e6fff" stroke-width="1.5"/>
+      <path d="M120 70 Q155 38 210 32 Q260 28 290 38 L320 60 L180 65 Z"
+            fill="#0e0e20" stroke="#1e6fff" stroke-width="0.8"/>
+      <path d="M185 65 Q200 35 245 32 Q270 30 295 44 L310 65 Z"
+            fill="rgba(30,111,255,0.15)" stroke="rgba(30,111,255,0.4)" stroke-width="0.8"/>
+      <path d="M122 68 Q135 42 178 35 L183 65 Z"
+            fill="rgba(30,111,255,0.12)" stroke="rgba(30,111,255,0.3)" stroke-width="0.8"/>
+      <rect x="50" y="108" width="320" height="6" rx="3" fill="#0a0a18"/>
+      <!-- Front wheel -->
+      <circle class="wheel" cx="120" cy="122" r="22" fill="#111" stroke="#1e6fff" stroke-width="2"/>
+      <circle cx="120" cy="122" r="13" fill="#0a0a18" stroke="rgba(30,111,255,0.5)" stroke-width="1"/>
+      <circle cx="120" cy="122" r="4" fill="#1e6fff"/>
+      <line x1="120" y1="109" x2="120" y2="135" stroke="#333" stroke-width="1.5"/>
+      <line x1="107" y1="122" x2="133" y2="122" stroke="#333" stroke-width="1.5"/>
+      <line x1="111" y1="113" x2="129" y2="131" stroke="#333" stroke-width="1.5"/>
+      <line x1="129" y1="113" x2="111" y2="131" stroke="#333" stroke-width="1.5"/>
+      <!-- Rear wheel -->
+      <circle class="wheel" cx="310" cy="122" r="22" fill="#111" stroke="#1e6fff" stroke-width="2"/>
+      <circle cx="310" cy="122" r="13" fill="#0a0a18" stroke="rgba(30,111,255,0.5)" stroke-width="1"/>
+      <circle cx="310" cy="122" r="4" fill="#1e6fff"/>
+      <line x1="310" y1="109" x2="310" y2="135" stroke="#333" stroke-width="1.5"/>
+      <line x1="297" y1="122" x2="323" y2="122" stroke="#333" stroke-width="1.5"/>
+      <line x1="301" y1="113" x2="319" y2="131" stroke="#333" stroke-width="1.5"/>
+      <line x1="319" y1="113" x2="301" y2="131" stroke="#333" stroke-width="1.5"/>
+      <!-- Lights -->
+      <ellipse cx="52" cy="92" rx="12" ry="7" fill="rgba(30,111,255,0.8)"/>
+      <ellipse cx="52" cy="92" rx="8" ry="4" fill="#fff"/>
+      <rect x="398" y="84" width="10" height="14" rx="2" fill="rgba(255,40,40,0.7)"/>
+      <line x1="60" y1="95" x2="395" y2="95" stroke="rgba(30,111,255,0.3)" stroke-width="0.8"/>
+      <rect x="44" y="82" width="10" height="16" rx="2" fill="#111" stroke="rgba(30,111,255,0.6)" stroke-width="0.8"/>
+    </svg>
+
+    <div class="hero-road"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">The Ultimate Driving Machine</p>
+      <h1 class="hero-title">
+        CHÀO MỪNG
+        <span class="line2">ĐẾN CỬA HÀNG</span>
+      </h1>
+      <p class="hero-sub">Trải nghiệm đẳng cấp Đức Quốc — Công nghệ, Tốc độ, Phong cách</p>
+      <a href="#models" class="hero-cta">
+        Khám phá dòng xe
+        <svg viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal" style="animation-delay:0.1s">
+        <div class="stat-num">109<span>+</span></div>
+        <div class="stat-label">Năm Lịch Sử</div>
+      </div>
+      <div class="stat-item reveal" style="animation-delay:0.2s">
+        <div class="stat-num">7<span>+</span></div>
+        <div class="stat-label">Dòng xe cao cấp</div>
+      </div>
+      <div class="stat-item reveal" style="animation-delay:0.3s">
+        <div class="stat-num">600<span>+</span></div>
+        <div class="stat-label">Khách hàng hài lòng</div>
+      </div>
+      <div class="stat-item reveal" style="animation-delay:0.4s">
+        <div class="stat-num">5<span>★</span></div>
+        <div class="stat-label">Đánh giá trung bình</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODELS -->
+  <section id="models">
+    <span class="section-label reveal">Bộ sưu tập</span>
+    <h2 class="section-title reveal">Mẫu Xe BMW</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="car-grid">
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-i4.png" alt="BMW i4" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 01</p>
+          <h3 class="car-name">BMW i4</h3>
+          <div class="car-tags">
+            <span class="car-tag electric">Điện</span>
+            <span class="car-tag">Gran Coupé</span>
+            <span class="car-tag">530 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-i7.png" alt="BMW i7" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 02</p>
+          <h3 class="car-name">BMW i7</h3>
+          <div class="car-tags">
+            <span class="car-tag electric">Điện</span>
+            <span class="car-tag">Sedan</span>
+            <span class="car-tag">544 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-iX3.png" alt="BMW iX3" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 03</p>
+          <h3 class="car-name">BMW iX3</h3>
+          <div class="car-tags">
+            <span class="car-tag electric">Điện</span>
+            <span class="car-tag">SAV</span>
+            <span class="car-tag">286 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-X3.png" alt="BMW X3" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 04</p>
+          <h3 class="car-name">BMW X3</h3>
+          <div class="car-tags">
+            <span class="car-tag">Xăng</span>
+            <span class="car-tag">SAV</span>
+            <span class="car-tag">248 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-X4.png" alt="BMW X4" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 05</p>
+          <h3 class="car-name">BMW X4</h3>
+          <div class="car-tags">
+            <span class="car-tag">Xăng</span>
+            <span class="car-tag">SAC</span>
+            <span class="car-tag">248 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-X5.png" alt="BMW X5" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 06</p>
+          <h3 class="car-name">BMW X5</h3>
+          <div class="car-tags">
+            <span class="car-tag">Hybrid</span>
+            <span class="car-tag">SAV</span>
+            <span class="car-tag">394 HP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-img-wrap">
+          <img src="images/BMW-X6.png" alt="BMW X6" loading="lazy" />
+          <div class="reflection"></div>
+        </div>
+        <div class="car-info">
+          <p class="car-num">Mẫu 07</p>
+          <h3 class="car-name">BMW X6</h3>
+          <div class="car-tags">
+            <span class="car-tag">Xăng</span>
+            <span class="car-tag">SAC</span>
+            <span class="car-tag">340 HP</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <span class="section-label reveal">Khách hàng nói gì</span>
+    <h2 class="section-title reveal">Đánh Giá</h2>
+    <div class="section-divider reveal" style="background:var(--gold)"></div>
+
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Xe rất êm và tiết kiệm nhiên liệu! Cảm giác lái hoàn toàn khác biệt.</p>
+        <p class="review-author">Nguyễn Văn A</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Thiết kế đẹp, nội thất sang trọng. Xứng đáng với từng đồng bỏ ra.</p>
+        <p class="review-author">Nguyễn Văn B</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">Nhiều mẫu mã kiểu dáng đẹp. Nhân viên tư vấn rất nhiệt tình.</p>
+        <p class="review-author">Nguyễn Văn C</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Nhân viên tư vấn nhiệt tình, hỗ trợ tận tâm từ đầu đến cuối.</p>
+        <p class="review-author">Nguyễn Văn D</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">Cửa hàng có nhiều chính sách ưu đãi hấp dẫn, rất đáng tin cậy.</p>
+        <p class="review-author">Nguyễn Văn E</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <span class="section-label reveal">Câu chuyện thương hiệu</span>
+    <h2 class="section-title reveal">Về Hãng Xe BMW</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="about-grid reveal">
+      <div class="about-item">
+        <span class="about-icon">🏢</span>
+        <h3 class="about-head">Thành Lập</h3>
+        <p class="about-text">Năm 1916 tại Munich, Đức. Hơn một thế kỷ định nghĩa lại sự hoàn hảo trong lái xe.</p>
+      </div>
+      <div class="about-item">
+        <span class="about-icon">⚙️</span>
+        <h3 class="about-head">Công Nghệ</h3>
+        <p class="about-text">Động cơ mạnh mẽ, công nghệ tiên tiến hàng đầu — từ hybrid đến thuần điện.</p>
+      </div>
+      <div class="about-item">
+        <span class="about-icon">🚗</span>
+        <h3 class="about-head">Sản Phẩm</h3>
+        <p class="about-text">Sedan, SUV, xe điện cao cấp — đa dạng để phù hợp mọi phong cách sống.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-name">B<span>M</span>W</div>
+        <p>Hãng xe cao cấp đến từ Đức — Sheer Driving Pleasure từ 1916 đến nay.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Về BMW</h4>
+        <ul>
+          <li><a href="#">Lịch sử thương hiệu</a></li>
+          <li><a href="#">Công nghệ</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên Hệ</h4>
+        <ul>
+          <li><span>contact@bmw.com</span></li>
+          <li><span>0123 456 789</span></li>
+          <li><span>Munich, Germany</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Mạng Xã Hội</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BMW Website</p>
+      <p>Được xây dựng với đam mê <span class="dot">•</span> Powered by Innovation</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
