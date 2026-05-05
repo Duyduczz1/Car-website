@@ -1,26 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cửa hàng BMW cao cấp – Trải nghiệm đẳng cấp " />
-  <title>BMW – The Ultimate Driving Machine</title>
+  <meta name="description" content="Danh sách xe BMW chính hãng, giá và thông tin chi tiết từng mẫu." />
+  <title>Models - BMW Showroom</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-  <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
   <nav>
     <a href="index.html" class="nav-logo">B<span>M</span>W</a>
     <ul>
@@ -32,127 +27,21 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-grid"></div>
-    <div class="speed-lines" id="speedLines"></div>
-
-    <div class="headlight-beam"></div>
-    <svg class="hero-car" viewBox="0 0 420 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 110 Q35 80 80 70 L140 50 Q180 30 230 28 Q280 28 310 40 L370 70 Q400 80 405 100 L410 110 Z"
-        fill="#1a1a2e" stroke="#1e6fff" stroke-width="1.5" />
-      <path d="M120 70 Q155 38 210 32 Q260 28 290 38 L320 60 L180 65 Z" fill="#0e0e20" stroke="#1e6fff"
-        stroke-width="0.8" />
-      <path d="M185 65 Q200 35 245 32 Q270 30 295 44 L310 65 Z" fill="rgba(30,111,255,0.15)"
-        stroke="rgba(30,111,255,0.4)" stroke-width="0.8" />
-      <path d="M122 68 Q135 42 178 35 L183 65 Z" fill="rgba(30,111,255,0.12)" stroke="rgba(30,111,255,0.3)"
-        stroke-width="0.8" />
-      <rect x="50" y="108" width="320" height="6" rx="3" fill="#0a0a18" />
-      <!-- Front wheel -->
-      <circle class="wheel" cx="120" cy="122" r="22" fill="#111" stroke="#1e6fff" stroke-width="2" />
-      <circle cx="120" cy="122" r="13" fill="#0a0a18" stroke="rgba(30,111,255,0.5)" stroke-width="1" />
-      <circle cx="120" cy="122" r="4" fill="#1e6fff" />
-      <line x1="120" y1="109" x2="120" y2="135" stroke="#333" stroke-width="1.5" />
-      <line x1="107" y1="122" x2="133" y2="122" stroke="#333" stroke-width="1.5" />
-      <line x1="111" y1="113" x2="129" y2="131" stroke="#333" stroke-width="1.5" />
-      <line x1="129" y1="113" x2="111" y2="131" stroke="#333" stroke-width="1.5" />
-      <!-- Rear wheel -->
-      <circle class="wheel" cx="310" cy="122" r="22" fill="#111" stroke="#1e6fff" stroke-width="2" />
-      <circle cx="310" cy="122" r="13" fill="#0a0a18" stroke="rgba(30,111,255,0.5)" stroke-width="1" />
-      <circle cx="310" cy="122" r="4" fill="#1e6fff" />
-      <line x1="310" y1="109" x2="310" y2="135" stroke="#333" stroke-width="1.5" />
-      <line x1="297" y1="122" x2="323" y2="122" stroke="#333" stroke-width="1.5" />
-      <line x1="301" y1="113" x2="319" y2="131" stroke="#333" stroke-width="1.5" />
-      <line x1="319" y1="113" x2="301" y2="131" stroke="#333" stroke-width="1.5" />
-      <!-- Lights -->
-      <ellipse cx="52" cy="92" rx="12" ry="7" fill="rgba(30,111,255,0.8)" />
-      <ellipse cx="52" cy="92" rx="8" ry="4" fill="#fff" />
-      <rect x="398" y="84" width="10" height="14" rx="2" fill="rgba(255,40,40,0.7)" />
-      <line x1="60" y1="95" x2="395" y2="95" stroke="rgba(30,111,255,0.3)" stroke-width="0.8" />
-      <rect x="44" y="82" width="10" height="16" rx="2" fill="#111" stroke="rgba(30,111,255,0.6)" stroke-width="0.8" />
-    </svg>
-
-    <div class="hero-road"></div>
-
-    <div class="hero-content">
-      <p class="hero-eyebrow">The Ultimate Driving Machine</p>
-      <h1 class="hero-title">
-        CHÀO MỪNG
-        <span class="line2">ĐẾN CỬA HÀNG</span>
-      </h1>
-      <p class="hero-sub">Trải nghiệm đẳng cấp — Công nghệ, Tốc độ, Phong cách</p>
-      <div class="hero-badges">
-        <span>Giao xe toàn quốc</span>
-        <span>Lái thử tại showroom</span>
-        <span>Hỗ trợ trả góp linh hoạt</span>
-      </div>
-      <a href="models.html" class="hero-cta">
-        Khám phá dòng xe
-        <svg viewBox="0 0 16 16" fill="none">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
+  <section class="page-hero">
+    <div class="page-intro">
+      <span class="section-label">Bộ sưu tập</span>
+      <h1>Models BMW và Giá Tham Khảo</h1>
+      <p>Khám phá toàn bộ danh mục BMW tại showroom của chúng tôi. Mỗi mẫu xe đều được cập nhật giá và thông số để bạn dễ dàng so sánh.</p>
+      <a href="contact.html" class="hero-cta">Liên hệ tư vấn</a>
     </div>
   </section>
 
-  <!-- STATS -->
-  <div id="stats">
-    <div class="stats-grid">
-      <div class="stat-item reveal" style="animation-delay:0.1s">
-        <div class="stat-num">109<span>+</span></div>
-        <div class="stat-label">Năm Lịch Sử</div>
-      </div>
-      <div class="stat-item reveal" style="animation-delay:0.2s">
-        <div class="stat-num">7<span>+</span></div>
-        <div class="stat-label">Dòng xe cao cấp</div>
-      </div>
-      <div class="stat-item reveal" style="animation-delay:0.3s">
-        <div class="stat-num">600<span>+</span></div>
-        <div class="stat-label">Khách hàng hài lòng</div>
-      </div>
-      <div class="stat-item reveal" style="animation-delay:0.4s">
-        <div class="stat-num">5<span>★</span></div>
-        <div class="stat-label">Đánh giá trung bình</div>
-      </div>
-    </div>
-  </div>
-
-  <section id="why">
-    <span class="section-label reveal">Lợi ích</span>
-    <h2 class="section-title reveal">Tại sao nên chọn showroom BMW của chúng tôi?</h2>
-    <div class="section-divider reveal"></div>
-
-    <div class="feature-grid">
-      <article class="feature-card reveal">
-        <h3>Hỗ trợ khách hàng 24/7</h3>
-        <p>Đội ngũ tư vấn sẵn sàng trả lời mọi câu hỏi và hỗ trợ đặt xe nhanh chóng.</p>
-      </article>
-      <article class="feature-card reveal">
-        <h3>Giá minh bạch</h3>
-        <p>Giá xe, giá lăn bánh và ưu đãi đều được trình bày rõ ràng, không phát sinh bất ngờ.</p>
-      </article>
-      <article class="feature-card reveal">
-        <h3>Trải nghiệm lái thử</h3>
-        <p>Đặt lịch lái thử dễ dàng để kiểm chứng hiệu năng và cảm giác trước khi quyết định.</p>
-      </article>
-      <article class="feature-card reveal">
-        <h3>Bảo hành chính hãng</h3>
-        <p>Chính sách bảo hành BMW chuẩn toàn cầu cùng dịch vụ chăm sóc sau bán hàng tận tâm.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- MODELS -->
   <section id="models">
     <span class="section-label reveal">Bộ sưu tập</span>
-    <h2 class="section-title reveal">Mẫu Xe BMW</h2>
+    <h2 class="section-title reveal">Thông tin và giá xe BMW</h2>
     <div class="section-divider reveal"></div>
 
     <div class="car-grid">
-      <!-- Các mẫu xe trưng bày -->
-
-      <!-- Xe số 1: BMW i4 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-i4.png" alt="BMW i4" loading="lazy" />
@@ -164,12 +53,15 @@
           <div class="car-tags">
             <span class="car-tag electric">Điện</span>
             <span class="car-tag">Gran Coupé</span>
-            <span class="car-tag">530 HP</span>
+            <span class="car-tag">335 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 2.450.000.000 VNĐ</span>
+            <span><strong>Khả năng tăng tốc:</strong> 0-100km/h trong 5.7s</span>
+            <span><strong>Phạm vi:</strong> 566 km</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 2: BMW i7 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-i7.png" alt="BMW i7" loading="lazy" />
@@ -183,10 +75,13 @@
             <span class="car-tag">Sedan</span>
             <span class="car-tag">544 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 6.200.000.000 VNĐ</span>
+            <span><strong>Nội thất:</strong> Hạng sang, 7 chỗ</span>
+            <span><strong>Phụ kiện:</strong> HUD, B&W, massage</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 3: BMW iX3 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-iX3.png" alt="BMW iX3" loading="lazy" />
@@ -197,13 +92,16 @@
           <h3 class="car-name">BMW iX3</h3>
           <div class="car-tags">
             <span class="car-tag electric">Điện</span>
-            <span class="car-tag">SAV</span>
+            <span class="car-tag">SUV</span>
             <span class="car-tag">286 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 3.150.000.000 VNĐ</span>
+            <span><strong>Phạm vi:</strong> 460 km</span>
+            <span><strong>Tiện nghi:</strong> Lái êm, an toàn cao</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 4: BMW X3 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-X3.png" alt="BMW X3" loading="lazy" />
@@ -214,13 +112,16 @@
           <h3 class="car-name">BMW X3</h3>
           <div class="car-tags">
             <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAV</span>
+            <span class="car-tag">SUV</span>
             <span class="car-tag">248 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 2.950.000.000 VNĐ</span>
+            <span><strong>Khả năng kéo:</strong> 2.300 kg</span>
+            <span><strong>An toàn:</strong> 8 túi khí, hỗ trợ đỗ xe</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 5: BMW X4 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-X4.png" alt="BMW X4" loading="lazy" />
@@ -231,13 +132,16 @@
           <h3 class="car-name">BMW X4</h3>
           <div class="car-tags">
             <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAC</span>
+            <span class="car-tag">Coupe SUV</span>
             <span class="car-tag">248 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 3.050.000.000 VNĐ</span>
+            <span><strong>Phong cách:</strong> Thể thao, đậm chất coupé</span>
+            <span><strong>Hỗ trợ:</strong> Camera 360, cảnh báo</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 6: BMW X5 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-X5.png" alt="BMW X5" loading="lazy" />
@@ -248,13 +152,16 @@
           <h3 class="car-name">BMW X5</h3>
           <div class="car-tags">
             <span class="car-tag">Hybrid</span>
-            <span class="car-tag">SAV</span>
+            <span class="car-tag">SUV</span>
             <span class="car-tag">394 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 4.700.000.000 VNĐ</span>
+            <span><strong>Tiết kiệm nhiên liệu:</strong> Kết hợp điện & xăng</span>
+            <span><strong>Bề mặt:</strong> Nội thất da Vernasca</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 7: BMW X6 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-X6.png" alt="BMW X6" loading="lazy" />
@@ -265,12 +172,16 @@
           <h3 class="car-name">BMW X6</h3>
           <div class="car-tags">
             <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAC</span>
+            <span class="car-tag">Coupe SUV</span>
             <span class="car-tag">340 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 4.950.000.000 VNĐ</span>
+            <span><strong>Phong cách:</strong> Cơ bắp, cá tính</span>
+            <span><strong>An toàn:</strong> Hệ thống phanh M Sport</span>
           </div>
         </div>
       </article>
-      <!-- Xe số 8: BMW 4 Series Gran Coupe -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-4Series-GranCoupe.png" alt="BMW 4 Series Gran Coupe" loading="lazy" />
@@ -281,13 +192,16 @@
           <h3 class="car-name">BMW 4 Series Gran Coupe</h3>
           <div class="car-tags">
             <span class="car-tag">Xăng</span>
-            <span class="car-tag">Coupe</span>
+            <span class="car-tag">Sedan</span>
             <span class="car-tag">255 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 3.180.000.000 VNĐ</span>
+            <span><strong>Kích thước:</strong> 4 cửa coupe</span>
+            <span><strong>Tiện ích:</strong> HUD, ghế chỉnh điện</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 9: BMW 4 Series -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-4Series.png" alt="BMW 4 Series" loading="lazy" />
@@ -298,13 +212,16 @@
           <h3 class="car-name">BMW 4 Series</h3>
           <div class="car-tags">
             <span class="car-tag">Xăng</span>
-            <span class="car-tag">Coupe</span>
+            <span class="car-tag">Sedan</span>
             <span class="car-tag">255 HP</span>
+          </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 2.980.000.000 VNĐ</span>
+            <span><strong>Đặc điểm:</strong> Thể thao, tinh tế</span>
+            <span><strong>Trợ lái:</strong> Cruise Control</span>
           </div>
         </div>
       </article>
-
-      <!-- Xe số 10: BMW 5 Series -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-5Series.png" alt="BMW 5 Series" loading="lazy" />
@@ -318,10 +235,13 @@
             <span class="car-tag">Sedan</span>
             <span class="car-tag">295 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 3.350.000.000 VNĐ</span>
+            <span><strong>Tiện nghi:</strong> Màn hình 12.3", Apple CarPlay</span>
+            <span><strong>An toàn:</strong> Cảnh báo lệch làn</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 11: BMW 7 Series -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-7Series.png" alt="BMW 7 Series" loading="lazy" />
@@ -335,10 +255,13 @@
             <span class="car-tag">Luxury</span>
             <span class="car-tag">536 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 8.900.000.000 VNĐ</span>
+            <span><strong>Nội thất:</strong> Da cao cấp, massage</span>
+            <span><strong>Công nghệ:</strong> Hệ thống Lidar</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 12: BMW 8 Series Gran Coupe -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-8Series-GranCoupe.png" alt="BMW 8 Series Gran Coupe" loading="lazy" />
@@ -352,10 +275,13 @@
             <span class="car-tag">Luxury</span>
             <span class="car-tag">523 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 7.250.000.000 VNĐ</span>
+            <span><strong>Thiết kế:</strong> Coupé bốn cửa</span>
+            <span><strong>Điều hòa:</strong> 4 vùng độc lập</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 13: BMW XM -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-XM.png" alt="BMW XM" loading="lazy" />
@@ -369,10 +295,13 @@
             <span class="car-tag">Performance</span>
             <span class="car-tag">644 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 14.500.000.000 VNĐ</span>
+            <span><strong>Đặc điểm:</strong> Hiệu suất cao, sang trọng</span>
+            <span><strong>Âm thanh:</strong> B&O Surround</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 14: BMW Z4 -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-Z4.png" alt="BMW Z4" loading="lazy" />
@@ -386,10 +315,13 @@
             <span class="car-tag">Roadster</span>
             <span class="car-tag">382 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 3.350.000.000 VNĐ</span>
+            <span><strong>Kiểu dáng:</strong> Mui trần thể thao</span>
+            <span><strong>Trải nghiệm:</strong> Lái phấn khích</span>
+          </div>
         </div>
       </article>
-
-      <!-- Xe số 15: BMW 3 Series -->
       <article class="car-card">
         <div class="car-img-wrap">
           <img src="images/BMW-3Series.png" alt="BMW 3 Series" loading="lazy" />
@@ -403,78 +335,36 @@
             <span class="car-tag">Sedan</span>
             <span class="car-tag">255 HP</span>
           </div>
+          <div class="car-details">
+            <span><strong>Giá:</strong> 2.750.000.000 VNĐ</span>
+            <span><strong>Trọng tâm:</strong> Thăng bằng tối ưu</span>
+            <span><strong>Hệ thống:</strong> Smart Key & Driving Assistant</span>
+          </div>
         </div>
       </article>
     </div>
   </section>
 
-
-  <!-- REVIEWS -->
-  <section id="reviews">
-    <span class="section-label reveal">Khách hàng nói gì</span>
-    <h2 class="section-title reveal">Đánh Giá</h2>
-    <div class="section-divider reveal" style="background:var(--gold)"></div>
-
-    <div class="reviews-grid">
-      <article class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Xe rất êm và tiết kiệm nhiên liệu! Cảm giác lái hoàn toàn khác biệt.</p>
-        <p class="review-author">Nguyễn Văn A</p>
-      </article>
-      <article class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Thiết kế đẹp, nội thất sang trọng. Xứng đáng với từng đồng bỏ ra.</p>
-        <p class="review-author">Nguyễn Văn B</p>
-      </article>
-      <article class="review-card">
-        <div class="review-stars">★★★★☆</div>
-        <p class="review-text">Nhiều mẫu mã kiểu dáng đẹp. Nhân viên tư vấn rất nhiệt tình.</p>
-        <p class="review-author">Nguyễn Văn C</p>
-      </article>
-      <article class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Nhân viên tư vấn nhiệt tình, hỗ trợ tận tâm từ đầu đến cuối.</p>
-        <p class="review-author">Nguyễn Văn D</p>
-      </article>
-      <article class="review-card">
-        <div class="review-stars">★★★★☆</div>
-        <p class="review-text">Cửa hàng có nhiều chính sách ưu đãi hấp dẫn, rất đáng tin cậy.</p>
-        <p class="review-author">Nguyễn Văn E</p>
-      </article>
+  <section class="info-grid">
+    <div class="info-card reveal">
+      <h3>Giá hiển thị</h3>
+      <p>Mức giá là tham khảo. Mỗi xe có thể được điều chỉnh theo gói trang bị, màu sắc và chính sách hiện hành.</p>
+    </div>
+    <div class="info-card reveal">
+      <h3>Thông tin xe</h3>
+      <p>Tất cả xe đều thông tin rõ ràng về nguồn gốc, đăng kiểm, bảo hành và hỗ trợ sau bán hàng.</p>
+    </div>
+    <div class="info-card reveal">
+      <h3>Hỗ trợ tài chính</h3>
+      <p>Chúng tôi hỗ trợ trả góp linh hoạt với lãi suất ưu đãi, thủ tục nhanh chóng, chỉ cần CMND + Hộ khẩu / Giấy phép lái xe.</p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <span class="section-label reveal">Câu chuyện thương hiệu</span>
-    <h2 class="section-title reveal">Về Hãng Xe BMW</h2>
-    <div class="section-divider reveal"></div>
-
-    <div class="about-grid reveal">
-      <div class="about-item">
-        <span class="about-icon">🏢</span>
-        <h3 class="about-head">Thành Lập</h3>
-        <p class="about-text">Năm 1916 tại Munich, Đức. Hơn một thế kỷ định nghĩa lại sự hoàn hảo trong lái xe.</p>
-      </div>
-      <div class="about-item">
-        <span class="about-icon">⚙️</span>
-        <h3 class="about-head">Công Nghệ</h3>
-        <p class="about-text">Động cơ mạnh mẽ, công nghệ tiên tiến hàng đầu — từ hybrid đến thuần điện.</p>
-      </div>
-      <div class="about-item">
-        <span class="about-icon">🚗</span>
-        <h3 class="about-head">Sản Phẩm</h3>
-        <p class="about-text">Sedan, SUV, xe điện cao cấp — đa dạng để phù hợp mọi phong cách sống.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer id="footer">
     <div class="footer-top">
       <div class="footer-brand">
         <div class="brand-name">B<span>M</span>W</div>
-        <p>Hãng xe cao cấp đến từ Đức — Sheer Driving Pleasure từ 1916 đến nay.</p>
+        <p>Showroom BMW cao cấp với đội ngũ tư vấn chuyên nghiệp và dịch vụ chu đáo.</p>
       </div>
       <div class="footer-col">
         <h4>Về BMW</h4>
