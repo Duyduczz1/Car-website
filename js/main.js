@@ -1,7 +1,34 @@
 /* =============================================
    BMW DARK THEME — main.js
    ============================================= */
+function scrollCarousel(btn, dir) {
+    const carousel = btn.closest('.carousel-wrapper').querySelector('.car-carousel');
+    carousel.scrollBy({ left: dir * 320, behavior: 'smooth' });
+}
 
+document.querySelectorAll('.car-carousel').forEach(carousel => {
+    const wrapper = carousel.closest('.carousel-wrapper');
+    const dotsContainer = wrapper.querySelector('.carousel-dots');
+    const cards = carousel.querySelectorAll('.car-card');
+    const visibleCount = 3;
+    const dotCount = Math.max(1, cards.length - visibleCount + 1);
+
+    for (let i = 0; i < dotCount; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => {
+            carousel.scrollTo({ left: i * 320, behavior: 'smooth' });
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    carousel.addEventListener('scroll', () => {
+        const index = Math.round(carousel.scrollLeft / 320);
+        dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === index);
+        });
+    });
+});
 // ── Custom cursor ──
 const cur = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');

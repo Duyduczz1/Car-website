@@ -556,7 +556,85 @@ section {
     max-width: 1400px;
     margin: 0 auto;
 }
+/* ── CAROUSEL ── */
+.carousel-wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
+.car-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 12px;
+}
+
+.car-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.car-carousel .car-card {
+    flex: 0 0 300px;
+    min-width: 300px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: var(--card);
+    border: 1px solid var(--border2);
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background var(--speed), border-color var(--speed), box-shadow var(--speed);
+    font-size: 20px;
+}
+
+.carousel-btn:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+    box-shadow: 0 0 20px var(--blue-glow);
+}
+
+.carousel-btn.prev { left: -24px; }
+.carousel-btn.next { right: -24px; }
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--border2);
+    cursor: pointer;
+    transition: background var(--speed), transform var(--speed);
+}
+
+.carousel-dot.active {
+    background: var(--blue);
+    transform: scale(1.4);
+}
+
+@media (max-width: 680px) {
+    .carousel-btn { display: none; }
+    .car-carousel .car-card { flex: 0 0 260px; min-width: 260px; }
+}
 .car-card {
     position: relative;
     background: var(--card);

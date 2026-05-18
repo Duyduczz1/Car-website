@@ -149,262 +149,267 @@
     <h2 class="section-title reveal">Mẫu Xe BMW</h2>
     <div class="section-divider reveal"></div>
 
-    <div class="car-grid">
-      <!-- Các mẫu xe trưng bày -->
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" onclick="scrollCarousel(this, -1)" aria-label="Trước">&#8592;</button>
+      <div class="car-carousel">
+        <!-- Các mẫu xe trưng bày -->
 
-      <!-- Xe số 1: BMW i4 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-i4.png" alt="BMW i4" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 01</p>
-          <h3 class="car-name">BMW i4</h3>
-          <div class="car-tags">
-            <span class="car-tag electric">Điện</span>
-            <span class="car-tag">Gran Coupé</span>
-            <span class="car-tag">530 HP</span>
+        <!-- Xe số 1: BMW i4 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-i4.png" alt="BMW i4" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 01</p>
+            <h3 class="car-name">BMW i4</h3>
+            <div class="car-tags">
+              <span class="car-tag electric">Điện</span>
+              <span class="car-tag">Gran Coupé</span>
+              <span class="car-tag">530 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 2: BMW i7 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-i7.png" alt="BMW i7" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 02</p>
-          <h3 class="car-name">BMW i7</h3>
-          <div class="car-tags">
-            <span class="car-tag electric">Điện</span>
-            <span class="car-tag">Sedan</span>
-            <span class="car-tag">544 HP</span>
+        <!-- Xe số 2: BMW i7 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-i7.png" alt="BMW i7" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 02</p>
+            <h3 class="car-name">BMW i7</h3>
+            <div class="car-tags">
+              <span class="car-tag electric">Điện</span>
+              <span class="car-tag">Sedan</span>
+              <span class="car-tag">544 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 3: BMW iX3 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-iX3.png" alt="BMW iX3" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 03</p>
-          <h3 class="car-name">BMW iX3</h3>
-          <div class="car-tags">
-            <span class="car-tag electric">Điện</span>
-            <span class="car-tag">SAV</span>
-            <span class="car-tag">286 HP</span>
+        <!-- Xe số 3: BMW iX3 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-iX3.png" alt="BMW iX3" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 03</p>
+            <h3 class="car-name">BMW iX3</h3>
+            <div class="car-tags">
+              <span class="car-tag electric">Điện</span>
+              <span class="car-tag">SAV</span>
+              <span class="car-tag">286 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 4: BMW X3 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-X3.png" alt="BMW X3" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 04</p>
-          <h3 class="car-name">BMW X3</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAV</span>
-            <span class="car-tag">248 HP</span>
+        <!-- Xe số 4: BMW X3 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-X3.png" alt="BMW X3" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 04</p>
+            <h3 class="car-name">BMW X3</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">SAV</span>
+              <span class="car-tag">248 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 5: BMW X4 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-X4.png" alt="BMW X4" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 05</p>
-          <h3 class="car-name">BMW X4</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAC</span>
-            <span class="car-tag">248 HP</span>
+        <!-- Xe số 5: BMW X4 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-X4.png" alt="BMW X4" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 05</p>
+            <h3 class="car-name">BMW X4</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">SAC</span>
+              <span class="car-tag">248 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 6: BMW X5 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-X5.png" alt="BMW X5" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 06</p>
-          <h3 class="car-name">BMW X5</h3>
-          <div class="car-tags">
-            <span class="car-tag">Hybrid</span>
-            <span class="car-tag">SAV</span>
-            <span class="car-tag">394 HP</span>
+        <!-- Xe số 6: BMW X5 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-X5.png" alt="BMW X5" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 06</p>
+            <h3 class="car-name">BMW X5</h3>
+            <div class="car-tags">
+              <span class="car-tag">Hybrid</span>
+              <span class="car-tag">SAV</span>
+              <span class="car-tag">394 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 7: BMW X6 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-X6.png" alt="BMW X6" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 07</p>
-          <h3 class="car-name">BMW X6</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">SAC</span>
-            <span class="car-tag">340 HP</span>
+        <!-- Xe số 7: BMW X6 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-X6.png" alt="BMW X6" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
-      <!-- Xe số 8: BMW 4 Series Gran Coupe -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-4Series-GranCoupe.png" alt="BMW 4 Series Gran Coupe" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 08</p>
-          <h3 class="car-name">BMW 4 Series Gran Coupe</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">Coupe</span>
-            <span class="car-tag">255 HP</span>
+          <div class="car-info">
+            <p class="car-num">Mẫu 07</p>
+            <h3 class="car-name">BMW X6</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">SAC</span>
+              <span class="car-tag">340 HP</span>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+        <!-- Xe số 8: BMW 4 Series Gran Coupe -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-4Series-GranCoupe.png" alt="BMW 4 Series Gran Coupe" loading="lazy" />
+            <div class="reflection"></div>
+          </div>
+          <div class="car-info">
+            <p class="car-num">Mẫu 08</p>
+            <h3 class="car-name">BMW 4 Series Gran Coupe</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">Coupe</span>
+              <span class="car-tag">255 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 9: BMW 4 Series -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-4Series.png" alt="BMW 4 Series" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 09</p>
-          <h3 class="car-name">BMW 4 Series</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">Coupe</span>
-            <span class="car-tag">255 HP</span>
+        <!-- Xe số 9: BMW 4 Series -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-4Series.png" alt="BMW 4 Series" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 09</p>
+            <h3 class="car-name">BMW 4 Series</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">Coupe</span>
+              <span class="car-tag">255 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 10: BMW 5 Series -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-5Series.png" alt="BMW 5 Series" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 10</p>
-          <h3 class="car-name">BMW 5 Series</h3>
-          <div class="car-tags">
-            <span class="car-tag">Hybrid</span>
-            <span class="car-tag">Sedan</span>
-            <span class="car-tag">295 HP</span>
+        <!-- Xe số 10: BMW 5 Series -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-5Series.png" alt="BMW 5 Series" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 10</p>
+            <h3 class="car-name">BMW 5 Series</h3>
+            <div class="car-tags">
+              <span class="car-tag">Hybrid</span>
+              <span class="car-tag">Sedan</span>
+              <span class="car-tag">295 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 11: BMW 7 Series -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-7Series.png" alt="BMW 7 Series" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 11</p>
-          <h3 class="car-name">BMW 7 Series</h3>
-          <div class="car-tags">
-            <span class="car-tag">Hybrid</span>
-            <span class="car-tag">Luxury</span>
-            <span class="car-tag">536 HP</span>
+        <!-- Xe số 11: BMW 7 Series -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-7Series.png" alt="BMW 7 Series" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 11</p>
+            <h3 class="car-name">BMW 7 Series</h3>
+            <div class="car-tags">
+              <span class="car-tag">Hybrid</span>
+              <span class="car-tag">Luxury</span>
+              <span class="car-tag">536 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 12: BMW 8 Series Gran Coupe -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-8Series-GranCoupe.png" alt="BMW 8 Series Gran Coupe" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 12</p>
-          <h3 class="car-name">BMW 8 Series Gran Coupe</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">Luxury</span>
-            <span class="car-tag">523 HP</span>
+        <!-- Xe số 12: BMW 8 Series Gran Coupe -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-8Series-GranCoupe.png" alt="BMW 8 Series Gran Coupe" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 12</p>
+            <h3 class="car-name">BMW 8 Series Gran Coupe</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">Luxury</span>
+              <span class="car-tag">523 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 13: BMW XM -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-XM.png" alt="BMW XM" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 13</p>
-          <h3 class="car-name">BMW XM</h3>
-          <div class="car-tags">
-            <span class="car-tag">Hybrid</span>
-            <span class="car-tag">Performance</span>
-            <span class="car-tag">644 HP</span>
+        <!-- Xe số 13: BMW XM -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-XM.png" alt="BMW XM" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 13</p>
+            <h3 class="car-name">BMW XM</h3>
+            <div class="car-tags">
+              <span class="car-tag">Hybrid</span>
+              <span class="car-tag">Performance</span>
+              <span class="car-tag">644 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 14: BMW Z4 -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-Z4.png" alt="BMW Z4" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 14</p>
-          <h3 class="car-name">BMW Z4</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">Roadster</span>
-            <span class="car-tag">382 HP</span>
+        <!-- Xe số 14: BMW Z4 -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-Z4.png" alt="BMW Z4" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 14</p>
+            <h3 class="car-name">BMW Z4</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">Roadster</span>
+              <span class="car-tag">382 HP</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Xe số 15: BMW 3 Series -->
-      <article class="car-card">
-        <div class="car-img-wrap">
-          <img src="images/BMW-3Series.png" alt="BMW 3 Series" loading="lazy" />
-          <div class="reflection"></div>
-        </div>
-        <div class="car-info">
-          <p class="car-num">Mẫu 15</p>
-          <h3 class="car-name">BMW 3 Series</h3>
-          <div class="car-tags">
-            <span class="car-tag">Xăng</span>
-            <span class="car-tag">Sedan</span>
-            <span class="car-tag">255 HP</span>
+        <!-- Xe số 15: BMW 3 Series -->
+        <article class="car-card">
+          <div class="car-img-wrap">
+            <img src="images/BMW-3Series.png" alt="BMW 3 Series" loading="lazy" />
+            <div class="reflection"></div>
           </div>
-        </div>
-      </article>
+          <div class="car-info">
+            <p class="car-num">Mẫu 15</p>
+            <h3 class="car-name">BMW 3 Series</h3>
+            <div class="car-tags">
+              <span class="car-tag">Xăng</span>
+              <span class="car-tag">Sedan</span>
+              <span class="car-tag">255 HP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <button class="carousel-btn next" onclick="scrollCarousel(this, 1)" aria-label="Tiếp">&#8594;</button>
+      <div class="carousel-dots" id="carouselDots"></div>
     </div>
   </section>
 
