@@ -138,6 +138,15 @@ nav ul li a {
     position: relative;
 }
 
+nav ul li a.active {
+    color: var(--white);
+}
+
+nav ul li a.active::after {
+    transform: scaleX(1);
+}
+
+
 nav ul li a::after {
     content: '';
     position: absolute;
