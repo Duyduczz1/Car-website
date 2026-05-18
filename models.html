@@ -26,6 +26,7 @@
       <li><a href="reviews.html">Đánh giá</a></li>
       <li><a href="about.html">Giới thiệu</a></li>
       <li><a href="contact.html">Liên hệ</a></li>
+      <li><a href="admin.html" style="color:var(--blue)">Admin</a></li>
     </ul>
   </nav>
 
@@ -407,6 +408,57 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Tải xe được thêm từ Admin Panel
+    (function loadAdminCars() {
+      const STORAGE_KEY = 'bmw_cars';
+      let cars = [];
+      try { cars = JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch { }
+      if (!cars.length) return;
+
+      const grid = document.querySelector('#models .car-grid');
+      const existingCount = grid ? grid.querySelectorAll('.car-card').length : 0;
+
+      cars.forEach((car, i) => {
+        const num = String(existingCount + i + 1).padStart(2, '0');
+        const fuelClass = car.fuel === 'Điện' ? 'electric' : '';
+        const imgHtml = car.img
+          ? `<img src="${car.img}" alt="${car.name}" loading="lazy" onerror="this.style.opacity='0'" />`
+          : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#1e6fff;font-size:48px">🚗</div>`;
+
+        const card = document.createElement('article');
+        card.className = 'car-card';
+        card.innerHTML = `
+          <div class="car-img-wrap">
+            ${imgHtml}
+            <div class="reflection"></div>
+          </div>
+          <div class="car-info">
+            <p class="car-num">Mẫu ${num}</p>
+            <h3 class="car-name">${car.name}</h3>
+            <div class="car-tags">
+              ${car.fuel ? `<span class="car-tag ${fuelClass}">${car.fuel}</span>` : ''}
+              ${car.segment ? `<span class="car-tag">${car.segment}</span>` : ''}
+              ${car.hp ? `<span class="car-tag">${car.hp} HP</span>` : ''}
+            </div>
+            <div class="car-details">
+              ${car.price ? `<span><strong>Giá:</strong> ${car.price} VNĐ</span>` : ''}
+              ${car.info1 ? `<span>${car.info1}</span>` : ''}
+              ${car.info2 ? `<span>${car.info2}</span>` : ''}
+            </div>
+          </div>`;
+
+        grid && grid.appendChild(card);
+      });
+
+      // Re-run scroll reveal observer for new cards
+      if (window.revealObserver) {
+        document.querySelectorAll('.car-card:not(.visible)').forEach(el => {
+          window.revealObserver.observe(el);
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>

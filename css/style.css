@@ -146,7 +146,6 @@ nav ul li a.active::after {
     transform: scaleX(1);
 }
 
-
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -558,13 +557,7 @@ section {
     border-top: 1px solid var(--border);
 }
 
-.car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 /* ── CAROUSEL ── */
 .carousel-wrapper {
     position: relative;
@@ -644,6 +637,16 @@ section {
     .carousel-btn { display: none; }
     .car-carousel .car-card { flex: 0 0 260px; min-width: 260px; }
 }
+
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .car-card {
     position: relative;
     background: var(--card);

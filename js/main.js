@@ -1,6 +1,9 @@
 /* =============================================
    BMW DARK THEME — main.js
    ============================================= */
+
+
+
 function scrollCarousel(btn, dir) {
     const carousel = btn.closest('.carousel-wrapper').querySelector('.car-carousel');
     carousel.scrollBy({ left: dir * 320, behavior: 'smooth' });
@@ -89,7 +92,7 @@ function makeSpeedLines() {
 if (sl) makeSpeedLines();
 
 // ── Scroll reveal ──
-const revealObserver = new IntersectionObserver(entries => {
+const revealObserver = window.revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
